@@ -257,7 +257,7 @@ def combine_text_save(list_order_info):
     else:
         if info_dict["check_exist"]:
             show_dict["output_text"] = comb_text.check_comb(show_dict["output_text"], show_dict)
-        elif info_dict["dialog_exist"]:
+        if info_dict["dialog_exist"]:
             show_dict["output_text"] = comb_text.dialog_comb(show_dict["output_text"], show_dict)
 
 
